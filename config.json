@@ -1,0 +1,46 @@
+{
+  "general": {
+    "token": "NjcwMzE0MjMyMDEyODY1NTM2.Xistgg.DqiCLBBny28UjtVtYJ48qGcw3bA",
+    "ident": "!",
+    "monitoring_interval": 30,
+    "activity": {
+      "enabled": true,
+      "guild": "432859301560975360",
+      "server": "aeon-server"
+    }
+  },
+  "template_defaults": {
+    "activity_offline": "Server is offline!",
+    "activity_online": "{{.Game.Info.player_count}}/{{.Game.Info.max_players}} players online",
+    "monitoring_offline": "Server {{.Whois.Address.IP}}:{{.Whois.Address.Port}} went offline! Panic!!111!",
+    "monitoring_online": "Server named {{.Game.Info.server_name}} is running smooth again. :)",
+    "status_offline": "Server {{.Whois.Address.IP}}:{{.Whois.Address.Port}} is offline!",
+    "status_online": "Server {{.Game.Info.server_name}} is up, {{.Game.Info.player_count}}/{{.Game.Info.max_players}} players online!"
+  },
+  "guilds": [
+    {
+      "guild_id": "432859301560975360",
+      "servers": [
+        {
+          "id": "aeon-server-css-94.250.213.225-27015",
+          "name": "aeon-server",
+          "game": "css",
+          "ip": "94.250.213.225",
+          "description": "aeon-server",
+          "port": 27015,
+          "template": {
+            "activity_offline": "Server is offline!",
+            "activity_online": "{{.Game.Info.player_count}}/{{.Game.Info.max_players}} players online",
+            "monitoring_offline": "Server {{.Whois.Address.IP}}:{{.Whois.Address.Port}} went offline! Panic!!111!",
+            "monitoring_online": "Server named {{.Game.Info.server_name}} is running smooth again. :)",
+            "status_offline": "Server {{.Whois.Address.IP}}:{{.Whois.Address.Port}} is offline!",
+            "status_online": "Server {{.Game.Info.server_name}} is up, {{.Game.Info.player_count}}/{{.Game.Info.max_players}} players online!"
+          },
+          "monitoring": false,
+          "up": true,
+          "channel": ""
+        }
+      ]
+    }
+  ]
+}
